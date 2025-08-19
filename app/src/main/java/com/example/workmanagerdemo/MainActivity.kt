@@ -92,8 +92,6 @@ fun WorkManagerDemoScreen(modifier: Modifier = Modifier) {
                 Spacer(modifier = Modifier.height(8.dp))
                 Button(onClick = { navController.navigate("workerTypeDemo") }) { Text("Worker 类型用法演示") }
                 Spacer(modifier = Modifier.height(8.dp))
-                Button(onClick = { navController.navigate("compatibility") }) { Text("兼容性测试演示") }
-                Spacer(modifier = Modifier.height(8.dp))
                 Button(onClick = { navController.navigate("historical") }) { Text("历史消息测试演示") }
                 Spacer(modifier = Modifier.height(200.dp))
             }
