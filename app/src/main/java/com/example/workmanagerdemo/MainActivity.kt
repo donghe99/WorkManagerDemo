@@ -30,7 +30,7 @@ import com.example.workmanagerdemo.ui.ParallelBranchWorkScreen
 import com.example.workmanagerdemo.ui.ExpeditedWorkScreen
 import com.example.workmanagerdemo.ui.WorkManagerObserveScreen
 import com.example.workmanagerdemo.ui.WorkerTypeDemoScreen
-import com.example.workmanagerdemo.ui.CompatibilityTestScreen
+import com.example.workmanagerdemo.ui.HistoricalMessageTestScreen
 
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.NavHost
@@ -93,6 +93,8 @@ fun WorkManagerDemoScreen(modifier: Modifier = Modifier) {
                 Button(onClick = { navController.navigate("workerTypeDemo") }) { Text("Worker 类型用法演示") }
                 Spacer(modifier = Modifier.height(8.dp))
                 Button(onClick = { navController.navigate("compatibility") }) { Text("兼容性测试演示") }
+                Spacer(modifier = Modifier.height(8.dp))
+                Button(onClick = { navController.navigate("historical") }) { Text("历史消息测试演示") }
                 Spacer(modifier = Modifier.height(200.dp))
             }
         }
@@ -110,7 +112,7 @@ fun WorkManagerDemoScreen(modifier: Modifier = Modifier) {
     composable("observe") { WorkManagerObserveScreen() }
     composable("unique") { UniqueWorkScreen() }
     composable("workerTypeDemo") { WorkerTypeDemoScreen() }
-    composable("compatibility") { CompatibilityTestScreen() }
+    composable("historical") { HistoricalMessageTestScreen() }
     }
 }
 
